@@ -304,7 +304,7 @@ footer ol li {
 .footer-image i.fa-twitter {
   font-size: 29px;
 }
-@media screen and (max-width:425px){
+@media screen and (max-width: 500px){
   body {
     max-width: 350px;
     margin: 0px auto;
@@ -361,6 +361,10 @@ footer ol li {
     /* color: white; */
     font-size: 18px;
     margin-left: 3px;
+    
+
+    
+    
   }
   i.fa-youtube {
     /* color: white; */
