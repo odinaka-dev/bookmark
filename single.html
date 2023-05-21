@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bookmark-landing-page-with-faq</title>
+  <link rel="icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="single.css">
+
+  <!-- link for the google fonts heads here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<!-- link for font-awesome begins from here -->
+<link rel="stylesheet" href="./css/all.min.css">
+<!-- the script for the navigation jquery begins from here -->
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script>
+    // inline javascript codes for the navigation bar can be accessed here, the use of jQuery
+    $(document).ready(function(){
+        $('.menu-image').click(function(){
+            $('ul').toggleClass('show');
+        });
+    });
+
+</script>
+</head>
+<body>
+    <nav>
+      <label  class="logo"><img src="images/logo-bookmark.svg" alt="bookmark-logo"></label>
+      <em class="menu">
+        <img class="menu-image" src="images/icon-hamburger.svg" alt="menu">
+      </em>
+      <ul>
+          <li class="act"><a class="active" href="#">features</a></li>
+          <li><a href="#">pricing</a></li>
+          <li><a href="#">contact</a></li>
+          <li class="login"><a href="#" class="log">login</a></li>
+          <!-- <i class="fab fa-facebook"></i> -->
+          <div id="fonts">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+          </div>
+      </ul>
+    </nav>
+
+    <section id="container">
+      <div class="image-box">
+        <img src="images/illustration-hero.svg" alt="illustration-hero">
+      </div>
+      <div class="container-text">
+        <h1>A SIMPLE BOOKMARK MANAGER</h1>
+        <p>
+          A clean and simple interface to organize your favorite
+          websites. Open a  new browser tab and see your sites load
+          instantly. Try it for free.
+        </p>
+      </div>
+      <div class="centered">
+        <span class="chrome">Get it on chrome</span>
+        <span class="iT">Get it on firefox</span>
+      </div>
+    </section>
+
+    <div class="featured">
+      <h2>Features</h2>
+      <p>
+        Our aim is to make it quick and easy for you
+        to access your favorite  websites. Your
+        bookmarks sync between your devices
+        so you can access them on the go.
+      </p>
+    </div>
+
+    <div class="featured">
+      <h2>Download the extension</h2>
+      <p>
+        We've got more browsers in the pipeline.
+        Please do let us know if you've got a 
+        favourite you'd like us to  prioritize.
+      </p>
+    </div>
+    <main id="main-grid">
+      <article class="grid-bar">
+        <div class="browser chrome">
+          <div><img src="images/logo-chrome.svg" alt=""></div>
+          <h1>Add to Chrome</h1>
+          <p>Minimum version 62</p>
+          <p class="browse"><img src="images/bg-dots.svg" alt=""></p>
+          <span class="chrome twelve">Add & install Extension</span>
+        </div>
+        <!-- one  -->
+        <div class="browser firefox">
+          <div><img src="images/logo-firefox.svg" alt=""></div>
+          <h1>Add to Firefox</h1>
+          <p>Minimum version 55</p>
+          <p class="browse"><img src="images/bg-dots.svg" alt=""></p>
+          <span class="chrome twelve">Add & install Extension</span>
+        </div>
+        <!-- two -->
+        <div class="browser Opera">
+          <div><img src="images/logo-opera.svg" alt=""></div>
+          <h1>Add to Opera</h1>
+          <p>Minimum version 46</p>
+          <p class="browse"><img src="images/bg-dots.svg" alt=""></p>
+          <span class="chrome twelve">Add & install Extension</span>
+        </div>
+      </article>
+    </main>
+
+      <!-- building an faq accoridion from scratch and styling it with css3 and javascript -->
+
+    <section id="intro">
+      <div class="intro-faq">
+        <h2>Frequently asked questions</h2>
+        <p>
+          Here are some of our FAQS. if you  have any 
+          other questions you'd like answered please 
+          feel free to email us.
+        </p>
+      </div>
+      <!-- <button class="accordion"></button> -->
+      <div class="maintain">
+      <div class="accordion">
+        <input type="radio" name="accordion"  id="accordion1" checked>
+        <label for="accordion1">What is Bookmark?</label>
+        <div class="accordion-content">
+          <p>A bookmark is a written document generated  from a server
+            a clients web-app, it can be written or uploaded.
+          </p>
+        </div>
+      </div>
+      <!-- accordion2 goes Here -->
+      <div class="accordion">
+        <input type="radio" name="accordion" id="accordion2">
+        <label for="accordion2">How can I request a new browser?</label>
+          <div class="accordion-content">
+              <p>One can request a new browser by signing up on  our
+                browser app and then write the document you would love to get from us
+                and download it from our browser or you  can simply get a written
+                template  from us.
+              </p>
+          </div>
+      </div>
+      <!-- accordion3 goes here  -->
+      <div class="accordion">
+        <input type="radio" name="accordion" id="accordion3">
+        <label for="accordion3">Is there a mobile app?</label>
+        <div class="accordion-content">
+          <p>There is a mobile softwareof this web on google play-store</p>
+        </div>
+      </div>
+      <!-- accordion4 goes here -->
+      <div class="accordion">
+        <input type="radio" name="accordion" id="accordion4">
+        <label for="accordion4">What about other chromium browsers?</label>
+        <div class="accordion-content">
+          <p>you  can use either opera-mini browser or firefox browser
+            you ccan also use phoenix browser to get the web-app on your devices.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- moreinfo begins from herre  -->
+    <div class="one">
+      <span class="chrome">More Info</span>
+    </div>
+    </section>
+
+    <div class="mail">
+      <p>35,000+ ALREADY JOINED</p>
+      <h2>
+        Stay up-to date with what we're doing
+      </h2>
+      <form>
+        <input type="email" id="emailcom"  placeholder="Enter your  email address" required>
+        <input type="submit" value="contact Us">
+      </form>
+    </div>
+
+    <footer class="end">
+      <div class="footer-image">
+        <h2>BOOKMARK</h2>
+      </div>
+      <ol class="footer-one">
+        <li>FEATURES</li>
+        <li>PRICING</li>
+        <li>CONTACT</li>
+      </ol>
+      <div class="footer-image">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <!-- <i class="fab fa-youtube"></i> -->
+      </div>
+    </footer>
+
+
+    <script src="single.js"></script>
+  </body>
+</html>
