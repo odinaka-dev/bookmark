@@ -401,3 +401,63 @@ footer ol li {
     left: 160px;
 }
 }
+
+/* practice of the carousel slides on css styling  */
+ 
+ #slidesh0w {
+  margin-top: 80px;
+  width: 100%;
+  height: 520px;
+  border-radius: 0px;
+  overflow: hidden;
+} 
+.slides {
+  width: 100%;
+  height: 400px;
+  display: inline-block;
+}
+.mySlides {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.mySlides div h2 {
+  color: hsl(229, 31%, 21%);
+}
+.mySlides p {
+  color: hsl(229, 8%, 60%);
+  line-height: 1.6;
+}
+.slides input {
+  display: none;
+}
+.navigation-manual {
+  position: absolute;
+  width: 100px;
+  margin-top: -1000px;
+  display: flex;
+  left: 130px;
+  justify-content: center;
+}
+.manual-btn {
+  border: 2px solid hsl(229, 31%, 21%);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover {
+  background: hsl(229, 31%, 21%);
+}
+
+#radio1:checked ~ .first {
+  margin-top: 0;
+}
+#radio2:checked ~ .first {
+  margin-top: -60%;
+}
+#radio3:checked ~ .first {
+  margin-top: -120%;
+}
