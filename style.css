@@ -361,11 +361,7 @@ footer ol li {
     /* color: white; */
     font-size: 18px;
     margin-left: 3px;
-    
-
-    
-    
-  }
+    }
   i.fa-youtube {
     /* color: white; */
     font-size: 18px;
@@ -379,6 +375,13 @@ footer ol li {
     /* color: white; */
     font-size: 18px;
   }
+  .mySlides div h2 {
+  color: hsl(229, 31%, 21%);
+}
+.mySlides p {
+  color: hsl(229, 8%, 60%);
+  line-height: 1.6;
+}
 }
 @media screen and (max-width: 375px){
   body {
@@ -399,6 +402,13 @@ footer ol li {
   }
   nav ul.show {
     left: 160px;
+}
+  .mySlides div h2 {
+  color: hsl(229, 31%, 21%);
+}
+.mySlides p {
+  color: hsl(229, 8%, 60%);
+  line-height: 1.6;
 }
 }
 
