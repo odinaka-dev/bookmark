@@ -188,14 +188,14 @@ nav {
 }
 .slides-text h2 {
   color: var(--Very-Dark-Blue);
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 550;
   margin: 0px 0px 10px 0px;
 }
 .slides-text p {
   color: var(--Grayish-Blue);
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .slides-text button {
   font-family: var(--font-family);
@@ -235,14 +235,14 @@ nav {
   margin-bottom: 20px;
 }
 .browser h1 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 550;
   margin-bottom: 5px;
   color: var(--Very-Dark-Blue);
 }
 .browser p {
   color: var(--Grayish-Blue);
-  font-size: 17px;
+  font-size: 16px;
 }
 .browser .chrome {
   position: relative;
