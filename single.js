@@ -60,3 +60,32 @@ slideBtn[5].addEventListener("click", () => {
   firstBtn[1].style.display = "none";
   firstBtn[2].style.display = "flex";
 });
+
+// using regex pattern for the email check at the sub footer section
+const Form = document.querySelector(".sub-form");
+const EmailInp = document.querySelector("#emailcom")
+const error = document.querySelector(".svg-error");
+const AllError = document.querySelector(".inp-email");
+const errorMessage = document.querySelector(".error-message");
+
+
+Form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (!EmailInp.value.includes("@gmail.com")) {
+    return errorFunc();
+  } else {
+    return validFunc();
+  }
+});
+
+const errorFunc = () => {
+  error.style.display = "flex";
+  errorMessage.style.display = "block";
+  AllError.style.outline = "1px solid hsl(0, 94%, 66%)";
+}
+
+const validFunc = () => {
+  error.style.display = "none";
+  AllError.style.outline = "none";
+  errorMessage.style.display = "none";
+}
